@@ -1,0 +1,19 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* the '*' applies to all sections. */
+* {
+	/* We add box-sizing: border-box; to tell the browser not to count the padding as part of the width */
+	box-sizing: border-box;
+}
+
+a{
+	color: $mainOrange;
+}
