@@ -6,20 +6,38 @@
     margin-left: auto;
     margin-right: auto;
 
-&--medium {
-    max-width: 976px;
-}
-/* any wrapper within a wrapper, don't pad it twice! */
-.wrapper {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-&--b-margin {
-    margin-bottom: 1rem;
-    @mixin atSmall {
-        margin-bottom: 3.875rem;
+    &--medium {
+        max-width: 976px;
     }
-}
+
+    &--nopadding-until-medium {
+        padding-left: 0;
+        padding-right: 0;
+        @mixin atMedium {
+            padding-left: 18px;
+            padding-right: 18px;
+        }  
+    }
+    &--nopadding-until-large {
+        padding-left: 0;
+        padding-right: 0;
+        @mixin atLarge {
+            padding-left: 18px;
+            padding-right: 18px;
+        }  
+    }
+
+    /* any wrapper within a wrapper, don't pad it twice! */
+    .wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &--b-margin {
+        margin-bottom: 1rem;
+        @mixin atSmall {
+            margin-bottom: 3.875rem;
+        }
+    }
 
 }
