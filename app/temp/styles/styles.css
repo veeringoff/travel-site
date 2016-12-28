@@ -794,30 +794,30 @@ a{
 
 @media (min-width: 1010px) {
 
-  .row__b-margin-until-Large {
+  .row__b-margin-until-large {
     margin-bottom: 0;
   }
 
-  .rowLarge-4 {
+  .row--large-4 {
     float: left;
     width: 33.33%;
   }
 
-  .rowLarge-4--larger {
+  .row__large-4--larger {
     width: 37%;
   }
 
-  .rowLarge-6 {
+  .row__large-6 {
     float: left;
     width: 50%;
   }
 
-  .rowLarge-8 {
+  .row__large-8 {
     float: left;
     width: 66.67%;
   }
 
-  .rowLarge-8--smaller {
+  .row__large-8--smaller {
     width: 63%;
   }
 }
