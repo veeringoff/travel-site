@@ -683,7 +683,11 @@ a{
 
 @media (min-width: 800px) {
 
-  .page-section--testimonials {
+  .page-section--testimonials {/* we added lazyload as a class where this image is called. The lazyload npm program changes that class 
+               name to lazyloaded automatically as the image is near to being displayed - we can do the following check. */
+  }
+
+  .page-section--testimonials.lazyloaded {
     background: url('/assets/images/testimonials-bg.jpg')  top center no-repeat;
     background-size: cover;
   }
