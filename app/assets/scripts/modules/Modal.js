@@ -2,6 +2,8 @@ import $ from 'jquery';
 
 class Modal {
     constructor() {
+                alert("Modal");
+
         this.openModalButton = $(".open-modal");
         this.modal = $(".modal");
         this.closeModalButton = $(".modal__close");
@@ -9,6 +11,10 @@ class Modal {
     }
 
     events() {
+
+        alert("events");
+
+
         // clicking the open modal button
         this.openModalButton.click(this.openModal.bind(this)); // bind sets the value of 'this'
         // clicking the x close modal button
@@ -26,10 +32,12 @@ class Modal {
 
     openModal() {
         this.modal.addClass("modal--is-visible");
+        alert("openModal");
         return false; // dosn't scroll to the top of the page!
     }
 
     closeModal() {
+        alert("closeModal");
         this.modal.removeClass("modal--is-visible");
     }
 }

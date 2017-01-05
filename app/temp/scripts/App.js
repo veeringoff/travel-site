@@ -11223,7 +11223,7 @@
 	    _createClass(StickyHeader, [{
 	        key: 'refreshWaypoints',
 	        value: function refreshWaypoints() {
-	            this.lazyImages.load(function () {
+	            this.lazyImages.on('load', function () {
 	                Waypoint.refreshAll();
 	            });
 	        }
@@ -11633,6 +11633,8 @@
 	    function Modal() {
 	        _classCallCheck(this, Modal);
 
+	        alert("Modal");
+
 	        this.openModalButton = (0, _jquery2.default)(".open-modal");
 	        this.modal = (0, _jquery2.default)(".modal");
 	        this.closeModalButton = (0, _jquery2.default)(".modal__close");
@@ -11642,6 +11644,9 @@
 	    _createClass(Modal, [{
 	        key: "events",
 	        value: function events() {
+
+	            alert("events");
+
 	            // clicking the open modal button
 	            this.openModalButton.click(this.openModal.bind(this)); // bind sets the value of 'this'
 	            // clicking the x close modal button
@@ -11660,11 +11665,13 @@
 	        key: "openModal",
 	        value: function openModal() {
 	            this.modal.addClass("modal--is-visible");
+	            alert("openModal");
 	            return false; // dosn't scroll to the top of the page!
 	        }
 	    }, {
 	        key: "closeModal",
 	        value: function closeModal() {
+	            alert("closeModal");
 	            this.modal.removeClass("modal--is-visible");
 	        }
 	    }]);
