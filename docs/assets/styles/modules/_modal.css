@@ -39,10 +39,10 @@
         transform: scaleX(1.2);
         transform-origin: 100% 0;
         color: $mainBlue;
+        cursor: pointer;
 
         &:hover {
             color: $mainOrange;
-            cursor: pointer;
         }
     }
 }

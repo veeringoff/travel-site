@@ -1452,11 +1452,11 @@ a{
   -webkit-transform-origin: 100% 0;
           transform-origin: 100% 0;
   color: #2f5572;
+  cursor: pointer;
 }
 
 .modal__close:hover {
   color: #d59541;
-  cursor: pointer;
 }
 
 .social-icons {
