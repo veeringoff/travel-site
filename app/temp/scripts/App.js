@@ -71,8 +71,8 @@
 	var mobileMenu = new _MobileMenu2.default();
 	new _RevealOnScroll2.default((0, _jquery2.default)(".feature-item"), "85%");
 	new _RevealOnScroll2.default((0, _jquery2.default)(".testimonial"), "60%");
-	var stickyHeader = new _StickyHeader2.default();
 	var modal = new _Modal2.default();
+	var stickyHeader = new _StickyHeader2.default();
 
 /***/ },
 /* 1 */
@@ -11223,7 +11223,7 @@
 	    _createClass(StickyHeader, [{
 	        key: 'refreshWaypoints',
 	        value: function refreshWaypoints() {
-	            this.lazyImages.on('load', function () {
+	            this.lazyImages.on("load", function () {
 	                Waypoint.refreshAll();
 	            });
 	        }
